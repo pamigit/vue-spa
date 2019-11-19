@@ -1,7 +1,7 @@
 const webpack = require('webpack')
 const clientConfig = require('./webpack.client.config')
 
-module.exports = function setupDevServer(app) {
+module.exports = function setupDevServer (app) {
   clientConfig.entry.app = [
     'webpack-hot-middleware/client',
     clientConfig.entry.app

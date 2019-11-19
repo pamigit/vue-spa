@@ -1,6 +1,6 @@
 <template>
   <div class="columns">
-    <div class="column is-one-third" v-for="(post, title) in posts" v-bind:key="post.id">
+    <div class="column is-one-third" v-for="post in posts" v-bind:key="post.id">
       <app-post :link="post.rest_api_enabler.Link">
         <h3 slot="title" v-html="post.title.rendered"></h3>
         <span slot="content" v-html="post.excerpt.rendered"></span>
